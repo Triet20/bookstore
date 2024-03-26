@@ -1,0 +1,29 @@
+
+.category-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .category-button {
+    flex-grow: 1;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #0074d9;
+    color: #fff;
+  }
+
+  .category-button.active {
+    background-color: #ff851b;
+  }
+
+  .category-button:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .category-button:hover {
+    background-color: #ff851b;
+  }
+  
