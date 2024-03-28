@@ -66,5 +66,6 @@ img {
     overflow: hidden;
     display: block;
     margin: auto;
+    cursor: pointer;
 }
 

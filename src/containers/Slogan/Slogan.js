@@ -6,6 +6,11 @@ import image3 from '../../assets/3.jpg';
 
 const Slogan = () => {
   const [imageIndex, setImageIndex] = useState(0);
+  const images = [
+    image1,
+    image2,
+    image3
+  ];
 
   useEffect(() => {
     const showImages = () => {
@@ -42,29 +47,27 @@ const Slogan = () => {
 
   return (
     <div>
-      <div className="slider-container">
-        <div className="myImages fade">
-          <a href=""><img src={image1} alt="Image 1" loading="lazy"/></a>
+  <div>
+    <div className="slider-container">
+      {images.map((image, index) => (
+        <div key={index} className="myImages fade">
+          <img src={image} alt={`Image ${index + 1}`} loading="lazy" />
           <div className="text"></div>
         </div>
-
-        <div className="myImages fade">
-          <a href=""><img src={image2} alt="Image 2" loading="lazy"/></a>
-          <div className="text"></div>
-        </div>
-
-        <div className="myImages fade">
-          <a href=""><img src={image3} alt="Image 3" loading="lazy"/></a>
-          <div className="text"></div>
-        </div>
-      </div>
+      ))}
+    </div>
+  </div>
       <br />
 
       <div style={{ textAlign: 'center' }}>
-        <span className="dot" onClick={() => handleDotClick(0)}></span>
-        <span className="dot" onClick={() => handleDotClick(1)}></span>
-        <span className="dot" onClick={() => handleDotClick(2)}></span>
-      </div>
+    {images.map((image, index) => (
+    <span
+      key={index}
+      className="dot"
+      onClick={() => handleDotClick(index)}
+    ></span>
+  ))}
+</div>
     </div>
   );
 };

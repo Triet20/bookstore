@@ -1,11 +1,11 @@
 import React from 'react';
 import './Header.css';
-
+import logo from '../../assets/logo.jpg';
 const Header = () => {
   return (
     <div className="header-container">
       <div className="logo">
-        <img src="path/to/your-logo.png" alt="Bookstore Logo" />
+        <img src={logo} alt="Bookstore Logo" />
       </div>
       <div className="search-bar">
         <input type="text" placeholder="Search for books..." />

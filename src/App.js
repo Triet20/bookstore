@@ -7,7 +7,9 @@ function App() {
       <div className = 'pageBorder-header'>
       <Header />
       </div>
+      <div className= 'pageSlogan'>
       <Slogan />
+      </div>
       <div className = 'pageBorder-books'>
       <Category />
       <BookDisplay />
