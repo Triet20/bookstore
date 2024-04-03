@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
-import logo from '../../assets/logo.jpg';
+import logo from '../../assets/book-shop.png';
+import SearchBarAPI from '../../components/SearchBar/SearchBarAPI'
 const Header = () => {
   return (
     <div className="header-container">
@@ -8,7 +9,7 @@ const Header = () => {
         <img src={logo} alt="Bookstore Logo" />
       </div>
       <div className="search-bar">
-        <input type="text" placeholder="Search for books..." />
+        <SearchBarAPI />
       </div>
       <div className="user-actions">
         <a href="">Sign In</a>

@@ -1,3 +1,3 @@
-export {default as Books} from './BookList/BookList'
-export {default as BookList} from './BookList/BookList'
-export {default as SearchBar} from './SearchBar/SearchBar'
+export {default as BooksList} from './BooksList/BooksList'
+export {default as Book} from './Book/Book'
+export {default as SearchBar} from './SearchBar/SearchBarAPI'

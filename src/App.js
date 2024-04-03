@@ -1,5 +1,5 @@
 import './App.css';
-import {BookList} from './components';
+import {BooksList} from './components';
 import { BookDisplay, Category, Header, Slogan, Footer } from './containers';
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <div className = 'pageBorder-books'>
       <Category />
       <BookDisplay />
-      <BookList />
+      <BooksList/>
       <Footer />
       </div>
     </div>
