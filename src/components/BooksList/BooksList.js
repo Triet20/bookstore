@@ -12,13 +12,13 @@ const BooksList = ({ books = [] }) => {
   };
 
   return (
-    <>
+    <div className = 'bookslist'>
       {books.map((book) => (
         <Book key={book.id} book={book} onClick={() => handleBookClick(book)} />
       ))}
 
       {displayModal && <Modal book={selectedBook} onClose={() => setDisplayModal(false)} />}
-    </>
+    </div>
   );
 };
 

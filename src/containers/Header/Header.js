@@ -2,14 +2,14 @@ import React from 'react';
 import './Header.css';
 import logo from '../../assets/book-shop.png';
 import SearchBarAPI from '../../components/SearchBar/SearchBarAPI'
-const Header = () => {
+const Header = ({ searchResult }) => {
   return (
     <div className="header-container">
       <div className="logo">
         <img src={logo} alt="Bookstore Logo" />
       </div>
       <div className="search-bar">
-        <SearchBarAPI />
+        <SearchBarAPI searchResult={searchResult}/>
       </div>
       <div className="user-actions">
         <a href="">Sign In</a>

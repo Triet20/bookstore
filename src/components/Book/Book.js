@@ -1,16 +1,16 @@
-
 import React from 'react';
 import './Book.css';
+
 const Book = ({ book }) => {
   const bookCover = book.volumeInfo.imageLinks?.smallThumbnail;
   const price = book.saleInfo.retailPrice?.amount;
 
   if (!bookCover || !price) {
-    return null; 
-	// Don't return anything if book cover or price is missing
+    return null;
   }
 
   return (
+    <div className='container'>
     <div className="book">
       <img src={bookCover} alt="" />
       <div className="description">
@@ -18,8 +18,8 @@ const Book = ({ book }) => {
         <p className="price">${price}</p>
       </div>
     </div>
+    </div>
   );
 };
 
 export default Book;
-
