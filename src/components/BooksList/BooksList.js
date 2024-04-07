@@ -11,11 +11,17 @@ const BooksList = ({ books = [] }) => {
     setDisplayModal(true);
   };
 
+  const minHeight = books.length === 0 ? 'calc(4 * 100px)' : 'auto';
+
   return (
-    <div className = 'bookslist'>
-      {books.map((book) => (
-        <Book key={book.id} book={book} onClick={() => handleBookClick(book)} />
-      ))}
+    <div className="bookslist" style={{ minHeight }}>
+      {books.length === 0 ? (
+        <p>No books available.</p> // Placeholder for no data
+      ) : (
+        books.map((book) => (
+          <Book key={book.id} book={book} onClick={() => handleBookClick(book)} />
+        ))
+      )}
 
       {displayModal && <Modal book={selectedBook} onClose={() => setDisplayModal(false)} />}
     </div>
