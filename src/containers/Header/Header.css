@@ -85,3 +85,13 @@
       font-size: 12px;
     }
   }
+
+  @media only screen and (max-width:900px) and (min-width:500px){
+    .shopping-cart i {
+      margin-left: 5px;
+
+    }
+    .cart-count{
+      margin-left: 5px;
+    }
+  }

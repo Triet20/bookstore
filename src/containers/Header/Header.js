@@ -17,7 +17,7 @@ const Header = ({ searchResult }) => {
         <a href="">Sign Up</a>
       </div>
       <div className="shopping-cart">
-        <i className="fas fa-shopping-cart"></i>
+        <i className="fa fa-shopping-cart"></i>
         <span className="cart-count">0</span>
       </div>
     </div>
