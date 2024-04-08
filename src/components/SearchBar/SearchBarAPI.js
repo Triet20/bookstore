@@ -26,7 +26,7 @@ const SearchBarAPI = ({ searchResult }) => {
           }
         }}
       />
-      <button><i className="fas fa-search"></i></button>
+      <button onClick={handleSearch}><i className="fa fa-search"></i></button>
     </div>
   );
 };

@@ -27,3 +27,10 @@
     background-color: #ff851b;
   }
   
+  @media only screen and (max-width:500px){
+    .category-button{
+      margin-right: 20px;
+      padding: 10px 20px;
+      width:23%;
+    }
+  }

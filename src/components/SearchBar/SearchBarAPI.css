@@ -1,0 +1,12 @@
+.searchBarAPI .fa {
+    font-size: 20px;
+}
+.searchBarAPI{
+    display:flex;
+}
+
+@media only screen and (max-width:500px) {
+    .searchBarAPI .fa {
+        font-size: 10px;
+    }
+}

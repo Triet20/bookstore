@@ -63,3 +63,25 @@
     margin-left: 0.5rem;
     font-size: 14px;
   }
+
+  @media only screen and (max-width:500px){
+    .search-bar{
+      max-width: 300px;
+    }
+    .search-bar input[type="text"] {
+      width: 100%;
+    }
+    .shopping-cart i {
+      margin-left: 5px;
+
+    }
+    .cart-count{
+      margin-left: 2rem;
+    }
+    .user-actions{
+      display:flex;
+    }
+    .user-actions a, span{
+      font-size: 12px;
+    }
+  }
